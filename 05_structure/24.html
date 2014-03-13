@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.css"/>
+</head>
+<body>
+
+<div ng-app="bootcamp" ng-controller="AppCtrl as app" class="well">
+
+    <tabset>
+        <tab heading="Admin" ui-sref="admin"></tab>
+        <tab heading="Dashboard" ui-sref="dashboard"></tab>
+    </tabset>
+
+    <div ui-view=""></div>
+
+</div>
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="admin/admin.js"></script>
+<script src="dashboard/dashboard.js"></script>
+<script src="24.js"></script>
+</body>
+</html>
