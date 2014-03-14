@@ -1,14 +1,14 @@
-angular.factory("myAwesomeData", function () {
+var testable = angular.factory("myAwesomeData", function () {
     return {}
 });
 
 
-angular.controller("TestableCtrl", function (myAwesomeData) {
+testable.controller("TestableCtrl", function (myAwesomeData) {
     //no myAwesomeData = {};
     //no $("myCustomHeader")
 });
 
-angular.directive("myCustomHeader", function () {
+testable.directive("myCustomHeader", function () {
     return {
 
     }
